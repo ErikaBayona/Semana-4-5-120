@@ -16,9 +16,9 @@
     </nav>
     <div id="carrusel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+            <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrusel" data-slide-to="1" class=""></li>
+            <li data-target="#carrusel" data-slide-to="2" class=""></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -56,6 +56,20 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div class="card text-white bg-dark mb-3" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://image.freepik.com/free-vector/established-international-trade-routes-selling-goods-overseas-export-control-export-controlled-materials-export-licensing-services-concept-pinkish-coral-bluevector-isolated-illustration_335657-1794.jpg" >
+    </div>
+    <div class="col-md-8" style="padding: 30px 0px 0px 160px;">
+      <div class="card-body">
+        <h1 class="card-title">¿QUIENES SOMOS?</h1>
+        <h4 class="card-text">Somos un operador logistico especializado y con mayor cobertura, garantizamos integridad en toda su mercancia y contamos con una ámplia y extensa capacidad de almacenamiento en diversas locaciones estrátegicas en el país, en búsqueda de otorgar la posibilidad de crear puntos de distribución operativamente viables para nuestros cliente.
+        Además tenemos a su disposicion la venta de maquinaria requerida para el apoyo de carga y descarga de mercancia.</h4>
+      </div>
+    </div>
+  </div>
+</div>
     <div>
       <home/>
     </div>
@@ -71,10 +85,8 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Información del sitio</h5>
-                    <p>Sitio creado para responder temporalmente a la actividad reto2 de
-                        Desarrollo de Software (Ciclo3)
-                        en el programa creado por MINTIC "Misión TIC 2022".</p>
+                    <h5 class="text-uppercase font-weight-bold">CONTACTENOS</h5>
+                    <p>logistica@logisticaytrasporte.com</p>
                     <h5 >
                         Enlaces
                     </h5>
@@ -90,7 +102,7 @@
                 <div class="col-md-6 mb-md-0 mb-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Información de contactos</h5>
+                    <h5 class="text-uppercase font-weight-bold">Para mayor informacion:</h5>
                     <p><ul style="margin-right: 5mm;">
                         <li>Eyder Alexander Herrera Carrillo: Desarrollador - Correo: <a href="alexxherrerac@gmail.com" target="_blank">alexxherrerac@gmail.com</a></li>
                         <li>Aura Zuleta Gómez : Desarrollador - Correo: <a href="amzuletago@unal.edu.co" target="_blank">amzuletago@unal.edu.co</a></li>
