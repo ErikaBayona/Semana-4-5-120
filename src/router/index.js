@@ -1,12 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
 import Categoria from '../components/Categoria.vue';
 import Login from '../components/Login.vue';
 import store from '../store/index';
 import Articulo from '../components/Articulo.vue';
 import Usuario from '../components/Usuario.vue';
-
+import admin from '../components/admin.vue';
+import home from "../components/home.vue";
 
 Vue.use(VueRouter);
 
@@ -16,7 +16,6 @@ const routes = [{
         component: Login,
         meta: {
             public: true
-
         }
     },
     {
@@ -30,7 +29,7 @@ const routes = [{
     {
         path: "/",
         name: "home",
-        component: Home,
+        component: home,
         meta: {
             public: true
 
@@ -56,6 +55,15 @@ const routes = [{
         }
 
     },
+    {
+        path: "/admin",
+        name: "admin",
+        component: admin,
+        meta: {
+            public: true
+        }
+
+    },
 
 ];
 
@@ -65,17 +73,17 @@ const router = new VueRouter({
     routes
 });
 
-router.beforeEach((to, from, next) => {
-    if (to.matched.some(record => record.meta.public)) {
-        next();
-    } else if (store.state.usuario) {
-        if (to.matched.some(record => record.meta.auth)) {
-            console.log(store.state.usuario);
-            next();
-        }
-    } else {
-        next({ name: 'login' });
-    }
-})
+// router.beforeEach((to, from, next) => {
+//     if (to.matched.some(record => record.meta.public)) {
+//         next();
+//     } else if (store.state.usuario) {
+//         if (to.matched.some(record => record.meta.auth)) {
+//             console.log(store.state.usuario);
+//             next();
+//         }
+//     } else {
+//         next({ name: 'login' });
+//     }
+// })
 
 export default router;

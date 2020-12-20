@@ -28,44 +28,8 @@
 
 </template>
 <script>
-import axios from 'axios';
 export default {
-    data(){
-        return{
-            email:'',
-            password:'',
-            errorM:null
-        }
-    },
-
-    methods:{
-        ingresar(){
-            axios.post('usuario/login',{email: this.email, password: this.password})
-            .then(respuesta =>{
-                 console.log(respuesta.data);
-                return respuesta.data;
-            })
-            .then(data =>{
-                this.$store.dispatch("guardarToken",data.tokenReturn);
-                this.$router.push({name: 'home'});
-            })
-            .catch(error =>{
-                //console.log(eror);
-                this.errorM=null;
-                console.log(error.response.status);
-                if (error.response.status==401){
-                    console.log('hola');
-                    this.errorM='credenciales son incorrectas.';
-                } 
-                else if (error.response.status==404){
-                    this.errorM='el usuario no existe';
-                }
-                else{
-                    this.errorM='Ocurrió un error con el servidor.';
-                }
-            });
-        }
+   
     }
-    
-}
+
 </script>

@@ -1,0 +1,11 @@
+.text-tomato {
+    color: tomato;
+}
+
+.bg-gray {
+    background-color: #eeeeee;
+}
+
+div.no-margin-bnottom {
+    margin-bottom: 0 !important;
+}
