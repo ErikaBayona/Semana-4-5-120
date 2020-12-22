@@ -9,16 +9,16 @@
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
             <ul class="navbar-nav ">
                 <li class="nav-item active ">
-                    <a class="nav-link link " v-on:click="ingresar" href="# ">Login <span class="sr-only ">(current)</span></a>
+                    <a class="nav-link link tomato " v-on:click="ingresar" href="# ">Login <span class="sr-only ">(current)</span></a>
                 </li>
                  <li class="nav-item active ">
-                    <a class="nav-link link "  href="#servicios">Servicios <span class="sr-only ">(current)</span></a>
+                    <a class="nav-link link tomato "  href="#servicios">Servicios <span class="sr-only ">(current)</span></a>
                 </li>
                  <li class="nav-item active ">
-                    <a class="nav-link link"  href="#testimonios">Testimonios <span class="sr-only ">(current)</span></a>
+                    <a class="nav-link link tomato"  href="#testimonios">Testimonios <span class="sr-only ">(current)</span></a>
                 </li>
                  <li class="nav-item active ">
-                    <a class="nav-link link "  href="#equipo">Equipo <span class="sr-only ">(current)</span></a>
+                    <a class="nav-link link tomato "  href="#equipo">Equipo <span class="sr-only ">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -300,8 +300,19 @@ export default {
       ],
     };
   },
+
+
   mounted() {
     //axios.get("articulo/list").then((response) => (this.datos = response.data));
   },
+
 };
 </script>
+
+
+<style scoped>
+  .tomato:hover {
+    color: tomato !important;
+    font-size: 1.05rem !important;
+  }
+</style>
